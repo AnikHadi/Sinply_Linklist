@@ -2,10 +2,10 @@ class SinglyLinklist {
   constructor() {
     this.head = null;
     this.tail = null;
-    this.length =0;
+    this.length = 0;
   }
 
-  isEmpty(){
+  isEmpty() {
     return this.length === 0;
   }
 
@@ -15,11 +15,11 @@ class SinglyLinklist {
       next: null,
     }
 
-    if(this.isEmpty()) {
+    if (this.isEmpty()) {
       this.head = newNode;
-      this.tail =newNode;
+      this.tail = newNode;
     }
-    else{
+    else {
       this.tail.next = newNode;
       this.tail = newNode;
     }
@@ -31,9 +31,9 @@ class SinglyLinklist {
     let lastNode = this.tail;
     let newLastNode;
 
-    if(!this.head) return null;
+    if (!this.head) return null;
 
-    if(this.length === 1) {
+    if (this.length === 1) {
       let removeNode = this.head;
       this.head = null;
       this.tail = null;
@@ -41,8 +41,8 @@ class SinglyLinklist {
       return removeNode;
     }
 
-    while(currentNode) {
-      if(currentNode.next === this.tail) {
+    while (currentNode) {
+      if (currentNode.next === this.tail) {
         newLastNode = currentNode
         break;
       }
@@ -76,6 +76,7 @@ console.log("Head: ", list.head)
 console.log("Tail: ", list.tail)
 console.log(list)
 
+//YOUTUBE vodeo https://www.youtube.com/watch?v=b5T7XHPazls&list=PL2ozzDVxiDacR4OsLwBo1L7Sj5jj4xGw_&index=45
 //Just Practice
 
 // class SinglyLinklist {
