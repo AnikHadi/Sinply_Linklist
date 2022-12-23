@@ -54,6 +54,25 @@ class SinglyLinklist {
 
     return lastNode;
   }
+
+  shift() {
+    if (!this.head) return null;
+
+    if (this.length === 1) {
+      let removeNode = this.head;
+      this.head = null;
+      this.tail = null;
+      this.length = 0;
+      return removeNode;
+    }
+
+    if (this.head) {
+      let currentNode = this.head.next;
+      this.head = currentNode;
+    }
+    this.length--
+  }
+
 }
 
 
@@ -65,12 +84,18 @@ list.push(10);
 list.push(15);
 list.push(20);
 list.push(25);
-list.pop();
-list.pop();
-list.pop();
-list.pop();
-list.pop();
-list.pop();
+// list.pop();
+// list.pop();
+// list.pop();
+// list.pop();
+// list.pop();
+// list.pop();
+list.shift()
+list.shift()
+list.shift()
+list.shift()
+list.shift()
+// list.shift()
 // console.log(list.isEmpty())
 console.log("Head: ", list.head)
 console.log("Tail: ", list.tail)
