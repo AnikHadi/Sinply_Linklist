@@ -76,7 +76,7 @@ console.log("Head: ", list.head)
 console.log("Tail: ", list.tail)
 console.log(list)
 
-
+//Just Practice
 
 // class SinglyLinklist {
 //   constructor() {
@@ -155,7 +155,7 @@ console.log(list)
 
 
 
-
+//Just Practice
 
 // class SimplyLinklist {
 //   constructor() {
